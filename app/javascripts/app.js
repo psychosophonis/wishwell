@@ -12,7 +12,8 @@ var amntdep;
  if (typeof web3 !== 'undefined') {
             window.web3 = new Web3(web3.currentProvider);
         } else {
-            window.web3 = new Web3(new Web3.providers.HttpProvider("http://localhost:8545"));
+          console.error("Check Metamask - no local provider allowed")
+           // window.web3 = new Web3(new Web3.providers.HttpProvider("http://localhost:8545"));
         }
 
 var contractAddress = '0xF62735F52Bd8071eBE29f003d6685FA579E955e9';
